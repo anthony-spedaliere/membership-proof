@@ -59,6 +59,8 @@ template MembershipInclusion(treeLevels) {
     eq.in[1] <== root;
     isMember <== eq.out;
 
+    // Ensure only valid membership proofs are accepted
+    isMember === 1;
 }
 
 component main {public [root]} = MembershipInclusion(5);

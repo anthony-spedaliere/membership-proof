@@ -89,13 +89,13 @@ node MembershipInclusion_js/generate_witness.js MembershipInclusion_js/Membershi
 2. Generate a proof:
 
 ```bash
-snarkjs groth16 prove MembershipInclusion_0000.zkey witness.wtns proof.json public.json
+snarkjs plonk prove MembershipInclusion_0000.zkey witness.wtns proof.json public.json
 ```
 
 3. Verify the proof:
 
 ```bash
-snarkjs groth16 verify verification_key.json public.json proof.json
+snarkjs plonk verify verification_key.json public.json proof.json
 ```
 
 ### On-Chain Verification
